@@ -92,10 +92,10 @@
     <br>
     <br>
     <br>
-   
+    <p style="color: white;" id="h"></p>
     <br>
 
-    <button onclick="on()" type="button" class="btn btn-dark"> <span class="spinner-grow spinner-grow-sm"></span> <small> SPACE WIKI: Prior to Updates</small> </button>
+    <button onmouseover="on()" onmouseleave="off()" type="button" class="btn btn-dark"> <span class="spinner-grow spinner-grow-sm"></span> <small> SPACE WIKI: Prior to Updates</small> </button>
     <br>
     <br>
     <br>
@@ -114,9 +114,11 @@
 </html>
 <script>
  function on() {
-   window.location="index1.html"
+   document.getElementById("h").innerHTML = "Lack of Updates Found";
  }
-
+ function off() {
+   document.getElementById("h").innerHTML = " ";
+ }
 
  window.addEventListener("keydown",my_keydown)
  function my_keydown(e){
@@ -127,7 +129,12 @@
      on();
      
    }
+   else{
+     
+      off(); 
+   }
+
+  }
  
- }
 </script>
 
