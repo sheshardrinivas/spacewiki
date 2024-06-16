@@ -119,6 +119,9 @@
  function off() {
    document.getElementById("h").innerHTML = " ";
  }
+ function web(){
+  window.location="index.html";
+}
 
  window.addEventListener("keydown",my_keydown)
  function my_keydown(e){
@@ -126,8 +129,8 @@
    
    console.log(keyPressed);
    if (keyPressed == 9  ) {
-     on();
      
+     web();
    }
    else{
      
