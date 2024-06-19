@@ -98,7 +98,7 @@
          <p style="color: white;">Weekly Updates on Laset Space News <span class="badge bg-dark">New</span></p>
          <hr style="color: white;">
          <div class="card-group">
-          <div class="card rounded card3 bg-dark text-white">
+          <div class="card rounded card3 bg-dark text-white" onclick="nasa()">
             <img src="nasa.gov.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
             
@@ -109,7 +109,7 @@
             </div>
           </div>
           
-          <div class="card rounded card2 bg-dark text-white ">
+          <div class="card rounded card2 bg-dark text-white " onclick="spacex()">
             <img src="spacex.jpeg" class="img card-img-top" alt="...">
             <div class="card-body">
                <h4 class="card-title">SpaceX's Starship Fourth Test Flight:</h4>
@@ -119,7 +119,7 @@
             </div>
           </div>
           
-          <div class="card card1 rounded bg-dark text-white " >
+          <div class="card card1 rounded bg-dark text-white " onclick="esa()" >
             <img src="eas.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               
@@ -199,6 +199,15 @@
  function spacewiki(){
     window.open("https://github.com/sheshardrinivas/spacewiki");
  }
+ function esa(){
+    window.open("https://www.esa.int/Enabling_Support/Space_Transportation/Ariane/Ariane_6_launches_YPSat_the_witness");
+ }
+ function nasa(){
+    window.open("https://www.nasa.gov/news-release/liftoff-nasa-astronauts-pilot-first-starliner-crewed-test-to-station/")
+  }
+  function spacex(){
+    window.open("https://www.space.com/spacex-starship-flight-4-test-launch-success")
+  }
 </script>
 
 <style>
@@ -227,7 +236,7 @@
    outline-width: 1px;
    padding:1px ;
    margin-bottom:15px;
-   
+   cursor: pointer;
    
 
  }
@@ -242,7 +251,7 @@
   margin-right:10px;
   
   margin-bottom:15px;
-  
+  cursor: pointer;
   
 
 }
@@ -255,6 +264,7 @@
  padding:1px ;
  margin-right:10px ;
  margin-bottom:15px;
+ cursor: pointer;
   
   
 
