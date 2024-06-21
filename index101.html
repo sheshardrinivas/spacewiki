@@ -24,23 +24,27 @@
     <header><h1   style="color: rgb(255, 255, 255); font-family: 'Courier New', Courier, monospace;">SPACE WIKI</h1></header>
     </div>
     <section id="Welcome" style="text-align: center;"></section>
-     <div class="container p-5 my-5 bg-dark text-white" style="text-align: left;" >
+     <div class="container p-5 my-5 bg-dark text-white" style="text-align: center;" >
          <h1 style="color: white;"> SPACE WIKI </h1>
-         <p style="color: white;"><img src="Untitled.mp4" class="rounded"></p>
+         <p style="color: white;"><video class="rounded" src="Untitled.gif " height="1000px" width="1000px" controls autoplay></video></p>
      </div>
     </section>
 </body>
 </html>
     <script>
  window.addEventListener("keydown",my_keydown)
+ function on(){
+    window.location="index.html"
+ }
  function my_keydown(e){
    keyPressed=e.keyCode;
    
    console.log(keyPressed);
-   if (keyPressed == 9  ) {
+   if (keyPressed == 32 ) {
      on();
      
    }
+
  
  }
 </script>
