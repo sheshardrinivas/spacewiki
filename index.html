@@ -78,6 +78,7 @@
             text-align: center;
             box-shadow: 10px 10px 40px rgb(255, 255, 255);
             border-radius: 100px;
+            border: 2px solid #ffffff; 
         }
         .card1 {
             background:#101010;
@@ -104,6 +105,7 @@
             text-align: center;
             box-shadow: 10px 10px 40px rgb(255, 255, 255);
             font-family:Orbitron;
+            
          
            
         }
@@ -160,6 +162,25 @@
             font-family:Orbitron;
             font-size: 15px;
         }
+        #btn {
+           background-color: rgb(0, 0, 0);
+           color: rgb(255, 255, 255);
+           padding: 20px;
+           font-family: Orbitron;
+           border: 2px dashed #ffffff; 
+           border-radius: 10px;
+           width: 20%;
+        }
+        #btn:hover {
+           background-color: rgb(0, 0, 0);
+           color: rgb(255, 255, 255);
+           padding: 20px;
+           font-family: Orbitron;
+           border: 2px dashed #ffffff; 
+           border-radius: 10px;
+           width: 20%;
+           box-shadow: 1px 1px 30px rgb(35, 35, 255);
+        }
         
     </style>
 </head>
@@ -214,15 +235,15 @@
         <br>
         <section id="contact" class="content">
             <div class="card">
-                <h2>About Me</h2>
+                <h2 id="head3">About Me</h2>
                 <p id="text">"I Am A Programmer."</p>
             </div>
             <div class="card">
-                <h2>My Mission</h2>
+                <h2 id="head3">My Mission</h2>
                 <p id="text">"To provide knowledgeable information about space for free."</p>
             </div>
             <div class="card" onclick="git()">
-                <h2>Contact Me</h2>
+                <h2 id="head3">Contact Me</h2>
                 <p id="text">"You Can Contact Me At Git-Hub"</p>
             </div>
         </section>
@@ -233,10 +254,22 @@
         
     </div>
     <footer >
-        <p>&copy; 2024 SPACE_WIKI</p>
+        <p id="head3">&copy; 2024 SPACE_WIKI  </p>
+        <br>
+      
+        <br>
+        <button  id="btn"  onclick="window.location='index5.html'" id="head3">BACK TO THE PAST</button>
         <br>
         <br>
-        <div style=" color: white;  background-color: black;" onclick="window.location='index5.html'">BACK TO PAST</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p id="text">BY SHESHADRINIVAS</p>
+        <br>
+        <br>
     </footer>
     <script>
         function git(){
