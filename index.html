@@ -55,6 +55,10 @@
             margin: 0;
             
         }
+        ::selection{
+            background-color: rgb(254, 248, 248);
+            color: rgb(0, 0, 0);
+        }
         .content {
             display: flex;
             justify-content: space-around;
@@ -117,7 +121,8 @@
         #head{
             background: #000000;
             color: #fff;
-           
+            padding-bottom: 50px;
+            padding-top: 70px;
             text-align: center;
             font-family:Orbitron;
             font-size: 30px;
@@ -125,7 +130,7 @@
         #head1{
            
             color: #fff;
-           
+      
             text-align: center;
             font-family:Orbitron;
             font-size: 50px;
@@ -194,6 +199,19 @@
            width: 20%;
            box-shadow: 1px 1px 30px rgb(35, 35, 255);
         }
+        #contact{
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+        .head3{
+            padding-bottom:50px ;
+        }
+        .head4{
+            padding-bottom:40px ;
+        }
+        .btn{
+            margin-bottom: 90px;
+        }
         
     </style>
 </head>
@@ -211,13 +229,9 @@
             <h1 id="head1">SPACE WIKI</h1>
             <p id="text">THIS IS A WEKKLY UPDATED SPACE NEWS WEBSITE</p>
         </section>
-        <br>
-        <br>
-        <br>
-        <br>
+        
         <p id="head">laset space news 2024</p>
-        <br>
-        <br>
+   
         <section id="about" class="content">
             
            
@@ -241,11 +255,8 @@
                    <br> <p id="text1">The search for extraterrestrial life is driven by both scientific curiosity and the profound questions it raises about our place in the universe.</p></p>
             </div>
         </section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+     
+       
         <section id="contact" class="content">
             <div class="card">
                 <h2 id="head3">About Me</h2>
@@ -260,29 +271,20 @@
                 <p id="text">"You Can Contact Me On Git-Hub"</p>
             </div>
         </section>
-        <br>
-        <br>
+ 
+        
 
          
         
     </div>
     <footer >
-        <p id="head3">&copy; 2024 SPACE_WIKI  </p>
-        <br>
-      
-        <br>
-        <button  id="btn"  onclick="window.location='index5.html'" id="head3">↩ BACK TO THE PAST</button>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <p class="head3" id="head3">&copy; 2024 SPACE_WIKI  </p>
+    
+        <button class="btn" id="btn"  onclick="window.location='index5.html'" id="head3">↩ BACK TO THE PAST</button>
+   
 
-        <p id="head4">BY SHESHADRINIVAS</p>
-        <br>
-        <br>
+        <p class="head4" id="head4">BY SHESHADRINIVAS</p>
+       
     </footer>
     <script>
         function git(){
