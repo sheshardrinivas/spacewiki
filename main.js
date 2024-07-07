@@ -8,11 +8,11 @@ page.addEventListener("mousemove", function(data) {
     outline.animate({
         left: x + "px",
         top: y + "px"
-    }, { duration: 200, fill: "forwards" });
+    }, { duration: 550, fill: "forwards" });
     dot.animate({ 
         left: x + "px",
         top: y + "px"
-    }, { duration: 250, fill: "forwards" });
+    }, { duration: 600, fill: "forwards" });
 });
 function git() {
     window.open("https://github.com/sheshardrinivas/spacewiki");
