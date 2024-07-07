@@ -16,6 +16,7 @@
             padding: 0;
             text-align: center;
             background: #000000;
+            cursor: none;
         }
         header {
             background: #000000;
@@ -43,6 +44,7 @@
         }
         nav a:hover {
             background: #151515;
+            cursor: none;
         }
         .container {
             padding: 20px;
@@ -177,6 +179,7 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
+            
         }
         #text{
             font-family:monospace;
@@ -203,6 +206,7 @@
            border: 2px dashed #ffffff; 
            border-radius: 10px;
            width: 20%;
+           cursor: none;
            box-shadow: 1px 1px 30px rgb(35, 35, 255);
         }
         #contact{
@@ -221,27 +225,7 @@
         .btn{
             margin-bottom: 90px;
         }
-        .btn:hover{
-            cursor: pointer;
-        }
-        .container:hover{
-            cursor: default;
-
-        }
-        footer:hover{
-            cursor: default;
-
-        }
-        nav:hover{
-            cursor: pointer;
-        }
-        h1:hover{
-            cursor: default;
-        }
-        #card3:hover{
-           cursor: pointer;
-           
-        }
+        
         #logo{
             height: 50px;
             width:  50px;
@@ -250,11 +234,31 @@
             
           
         }
-
+        .cursor-dot{
+            width: 5px;
+            height: 5px;
+            background-color: white;
+            
+        }
+        .cursor-outline{
+          width:  20px;
+          height: 20px;
+          border: 2px solid rgba(255, 255, 255, 0.744);
+        }
+        .cursor-dot,
+         .cursor-outline{
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50% ,-50%);
+            border-radius: 40%;
+            z-index: 2;
+            pointer-events: none;
+         }
         
     </style>
 </head>
-<body >
+<body class="page" >
     <img src="logo.jpeg" id="logo">
     <header>
         <h1 id="head2">Welcome To Space Wiki</h1>
@@ -312,9 +316,10 @@
                 <p id="text">"You Can Contact Me On Git-Hub"</p>
             </div>
         </section>
-
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
         
-
+    
          
         
     </div>
@@ -330,7 +335,8 @@
    
    
    
-
+   
+   
     <script src="main.js"></script>
  
 </body>
