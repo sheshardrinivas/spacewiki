@@ -33,7 +33,7 @@ const outline = document.querySelector("[data-cursor-outline]");
                 left: x + "px",
                 top: y + "px"
             }, { duration: 50, fill: "forwards" });
-            dot.animate({
+            dot.animate({ 
                 left: x + "px",
                 top: y + "px"
             }, { duration: 100, fill: "forwards" });
