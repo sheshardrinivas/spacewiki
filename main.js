@@ -1,4 +1,3 @@
-
 const outline = document.querySelector("[data-cursor-outline]");
 const dot = document.querySelector("[data-cursor-dot]");
 const page = document.querySelector(".page");
