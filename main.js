@@ -36,7 +36,7 @@ const outline = document.querySelector("[data-cursor-outline]");
             dot.animate({
                 left: x + "px",
                 top: y + "px"
-            }, { duration: 500, fill: "forwards" });
+            }, { duration: 10, fill: "forwards" });
         });
    
 
