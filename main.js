@@ -32,11 +32,11 @@ const outline = document.querySelector("[data-cursor-outline]");
             outline.animate({
                 left: x + "px",
                 top: y + "px"
-            }, { duration: 600, fill: "forwards" });
+            }, { duration: 50, fill: "forwards" });
             dot.animate({
                 left: x + "px",
                 top: y + "px"
-            }, { duration: 10, fill: "forwards" });
+            }, { duration: 100, fill: "forwards" });
         });
    
 
