@@ -19,7 +19,7 @@ function git() {
 }
 
 
-gsap.fromTo(".loading-page",{opacity:1,scale:1},{opacity:0,duration:10,delay:5 ,scale:0});
-gsap.fromTo(".name",{opacity:1,scale:1},{opacity:0,duration:10,delay:5 ,scale:0});
-gsap.fromTo(".name1",{opacity:1,scale:1},{opacity:0,duration:10,delay:5,scale:0});
+gsap.fromTo(".loading-page",{opacity:1,scale:1},{opacity:0,duration:5,delay:5,y:-500});
+gsap.fromTo(".name",{opacity:1,scale:1},{opacity:0,duration:5,delay:5,y:-500 });
+gsap.fromTo(".name1",{opacity:1,scale:1},{opacity:0,duration:5,delay:5,y:-500});
 
