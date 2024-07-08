@@ -254,11 +254,32 @@
             border-radius: 40%;
       
             pointer-events: none;
-         }
-        
+        }
+        .loading-page{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            position:absolute;
+            align-content: center;
+            justify-content: center;
+            z-index: 2;
+ 
+
+        }
+        .name{
+            color:white;
+
+            font-family: Orbitron;
+            font-weight: 200;
+            
+        }
     </style>
 </head>
 <body class="page" >
+    <div class="loading-page">
+        <div class="name"><h1 class="name1" >WELCOME TO SPACE WIKI</h1></div>
+    
+    </div>
     <img src="logo.jpeg" id="logo">
     <header>
         <h1 id="head2">Welcome To Space Wiki</h1>
@@ -269,6 +290,7 @@
         <a href="#about">Info</a>
         <a href="#contact">Contact</a>
     </nav>
+    
     <div class="container">
         <section id="home" class="hero">
             <h1 id="head1">SPACE WIKI</h1>
@@ -332,7 +354,7 @@
         <p class="head4" id="head4" >BY SHESHADRINIVAS</p>
        
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
  
 </body>
