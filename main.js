@@ -11,7 +11,7 @@ page.addEventListener("mousemove", function(data) {
     outline.animate({
         left: x + "px",
         top: y + "px"
-    }, { duration: 1000, fill: "forwards" });
+    }, { duration: 1300, fill: "forwards" });
     dot.animate({ 
         left: x + "px",
         top: y + "px"
