@@ -12,23 +12,28 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-
-
      }
  
      ::selection{
         background-color: rgba(255, 255, 255, 0.309);
         color: rgb(0, 0, 0);
      }
-      html,body{
+      html, body{
         width: 100%;
         height: 100%;
         cursor: none;
+        background-color: black;
       }
       .page1{
         height: 100vh;
         width: 100%;
         position: relative;
+      }
+      .page2{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-color: black;
       }
       .page1 video{
         height: 100%;
@@ -42,8 +47,10 @@
         background-color: rgba(0, 0, 0, 0);
         position: relative;
         z-index: 2;
-        
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       nav{
         width: 100%;
@@ -53,16 +60,10 @@
         padding: 2vh 3vw;
         background-color: rgba(0, 136, 255, 0);
         position: fixed;
-        
-        
-   
-        
+        top: 0;
+        left: 0;
+        z-index: 3;
       }
-   
-        
-   
-        
-     
       a{
         cursor: none;
       }
@@ -82,42 +83,91 @@
         border: none;
         cursor: none;
       }
+      #h4:hover .side{
+        animation: h 2s;
+        height: 70px;
 
-    
+      }
+      #h4:hover .side a{
+        animation: txt 5s ;
+        opacity: 1;
+      }
+      @keyframes txt{
+        from{opacity: 0;}
+        to{opacity: 1;}
+      }
+      @keyframes h{
+        from{height: 0px;}
+        to{height: 70px;}
+      }
+      @keyframes tx1t{
+        from{opacity: 1;}
+        to{opacity: 0;}
+      }
+      @keyframes h1{
+        from{height: 70px;}
+        to{height: 0px;}
+      }
+
+      #h4{
+        justify-content: left;
+      }
       a{
         text-decoration: none;
         font-family: Orbitron;
         color: white;
         font-weight: 200;
-     
       }
-      
       .cursor-dot{
             width: 10px;
             height: 10px;
             background-color: rgba(255, 255, 255, 0.596);
             padding: 5px;
             border-radius: 50%;
-        }
-        .cursor-outline{
-          width:  40px;
+      }
+      .cursor-outline{
+          width: 40px;
           height: 40px;
           border: 2px solid rgb(255, 255, 255);
           padding: 10px;
           border-radius: 20%;
-        }
-        .cursor-dot,
-         .cursor-outline{
+      }
+      .cursor-dot,
+      .cursor-outline{
             position: fixed;
             top: 0;
             left: 0;
             margin: 10px;
             transform: translate(-50% ,-50%);
-       
             z-index: 4;
             pointer-events: none;
-        }
-
+      }
+      .centered-text {
+        color: white;
+        font-family: Orbitron;
+        font-size: 4vw;
+        text-align: center;
+        font-weight: 400;
+      }
+      .side {
+        color: white;
+        font-family: Orbitron;
+        font-size: 0.8vw;
+        text-align: center;
+        font-weight: 400;
+        animation: h1 2s;
+   
+        height: 0px;
+        background-color: black;
+        display: flex;
+        
+        flex-direction: column;
+      }
+      .side a {
+        padding: 5px;
+        animation: txt1 5s ;
+        opacity: 0;
+      }
     </style>
 </head>
 <body>
@@ -125,15 +175,18 @@
         <div class="cursor-dot" data-cursor-dot></div>
         <div class="cursor-outline" data-cursor-outline></div>
         <div class="page1">
-            <video id="tag"  autoplay  loop muted src="loop.mp4"></video>
+            <video id="tag" autoplay loop muted src="loop.mp4"></video>
             <div class="page1info">
-                <nav >
-                   <h3 id="h3" href="#" >SPACE WIKI</h3>
-                   <div id="h4"  ><button><a >MENU</a></button></div>
-                
+                <nav>
+                   <h3 id="h3" href="#">SPACE WIKI</h3>
+                   <div id="h4"><button>MENU</button><div class="side"><a href="#">1</a><a href="#">2</a></div></div>
                 </nav>
+                <div class="centered-text">
+                    <p>welcome to space wiki</p>
+                </div>
             </div>
         </div>
+        <div class="page2"></div>
     </div>
     <script src="app.js"></script>
 </body>
