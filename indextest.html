@@ -1,45 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <link rel="shortcut icon" type="x-icon" href="logo.jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-      .gird{
-  
-        text-align: center;
+      .main {
+        padding: 2rem;
       }
-      h1::after{
-        content: "";
-        position: absolute;
-        height: 10px;
+      .slider-wrapper {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+      }
+      .slider {
+        display: flex;
+        aspect-ratio: 16/9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 1px 1px 80px 40px rgba(220, 20, 60, 0.429);
+        border-radius: 0.5rem;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      .slider::-webkit-scrollbar {
+        display: none;  /* Chrome, Safari, and Opera */
+      }
+      .slide {
+        position: relative;
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        overflow: hidden;
+      }
+      .slider img {
         width: 100%;
-        background-color: black;
-        bottom: 0;
-        left: 0;
+        height: 100%;
+        object-fit: cover;
       }
-      h1{
-
-        width: max-content;
+      .overlay {
+        position: absolute;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+        color: #f1f1f1; /* White text color */
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        padding: 1rem;
       }
-
-
-
-
-
-
+      .slide:hover .overlay {
+        opacity: 1;
+      }
+      .nav {
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+      .nav a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.97;
+        transition: opacity ease 240ms;
+      }
+      .nav a:hover {
+        opacity: 1;
+      }
     </style>
 </head>
-<body >
-    
-     <div class="gird"><h1>hi</h1></div>
-
- 
-</div>
+<body>
+    <section class="main"> 
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div class="slide">
+            <img src="spaceelevator1.jpeg" id="side-1" alt="">
+            <div class="overlay">Space Elevator 1</div>
+          </div>
+          <div class="slide">
+            <img src="spaceelevator2.jpeg" id="side-2" alt="">
+            <div class="overlay">Space Elevator 2</div>
+          </div>
+          <div class="slide">
+            <img src="spaceelevator3.jpeg" id="side-3" alt="">
+            <div class="overlay">Space Elevator 3</div>
+          </div>
+        </div>
+        <div class="nav">
+          <a href="#side-1"></a>
+          <a href="#side-2"></a>
+          <a href="#side-3"></a>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.querySelectorAll('.nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
 </body>
-</html>   
+</html>
