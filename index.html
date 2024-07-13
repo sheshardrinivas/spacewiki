@@ -162,9 +162,9 @@
         box-shadow: 1px 1px 10px white;
         height: 0px;
         background-color: rgba(0, 0, 0, 0.548); 
-        
+     
         display: flex;
-        width: max-content;
+        width: 5rem;
         
         flex-direction: column;
       }
@@ -172,6 +172,18 @@
         padding: 5px;
         animation: txt1 5s ;
         opacity: 0;
+        font-size: clamp(0.9rem,0.5rem,0.2rem);
+
+      }
+      .side #c{
+        font-size: clamp(0.9rem,0.5rem,0.2rem);
+      }
+      #dot{
+            width: 0.5px;
+            height:0.5px;
+            background-color: rgba(255, 255, 255, 0.596);
+            padding: 5px;
+            border-radius: 50%;
       }
     </style>
 </head>
@@ -185,7 +197,7 @@
             <div class="page1info">
                 <nav>
                    <h3 id="h3" href="#">SPACE WIKI</h3>
-                   <div id="h4"><button>MENU</button><div class="side"><a href="#a">info</a><a href="#c">contacts</a></div></div>
+                   <div id="h4"><button>MENU</button><div class="side"><a href="#a"><div id="dot"></div>info</a><a  id="c" href="#c"><div id="dot"></div>contacts</a></div></div>
                 </nav>
                 <div class="centered-text">
                     <p>WELCOME TO SPACE WIKI</p>
