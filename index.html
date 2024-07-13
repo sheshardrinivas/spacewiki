@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+
+     }
+ 
+     ::selection{
+        background-color: rgba(255, 255, 255, 0.309);
+        color: rgb(0, 0, 0);
+     }
+      html,body{
+        width: 100%;
+        height: 100%;
+        cursor: none;
+      }
+      .page1{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+      }
+      .page1 video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position:absolute;
+      }
+      .page1info{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+        z-index: 2;
+        
+        
+      }
+      nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vh 3vw;
+        background-color: rgba(0, 136, 255, 0);
+        position: fixed;
+        
+        
+   
+        
+      }
+   
+        
+   
+        
+     
+      a{
+        cursor: none;
+      }
+      h3{
+        font-size: 1vw;
+        font-family: Orbitron;
+        color: white;
+        font-weight: 200;
+      }
+      #h4 button{
+        font-size: 0.8vw;
+        text-decoration: none;
+        font-family: Orbitron;
+        color: white;
+        font-weight: 200;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: none;
+      }
+
+    
+      a{
+        text-decoration: none;
+        font-family: Orbitron;
+        color: white;
+        font-weight: 200;
+     
+      }
+      
+      .cursor-dot{
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.596);
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .cursor-outline{
+          width:  40px;
+          height: 40px;
+          border: 2px solid rgb(255, 255, 255);
+          padding: 10px;
+          border-radius: 20%;
+        }
+        .cursor-dot,
+         .cursor-outline{
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 10px;
+            transform: translate(-50% ,-50%);
+       
+            z-index: 4;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+        <div class="page1">
+            <video id="tag"  autoplay  loop muted src="loop.mp4"></video>
+            <div class="page1info">
+                <nav >
+                   <h3 id="h3" href="#" >SPACE WIKI</h3>
+                   <div id="h4"  ><button><a >MENU</a></button></div>
+                
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
