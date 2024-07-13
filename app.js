@@ -1,6 +1,6 @@
 const outline = document.querySelector("[data-cursor-outline]");
 const dot = document.querySelector("[data-cursor-dot]");
-
+document.getElementById("tag").defaultPlaybackRate = 0.1;
 const page = document.querySelector(".main");
 page.addEventListener("mousemove", function(data) {
     console.log("Mouse moved:", data.clientX, data.clientY);
