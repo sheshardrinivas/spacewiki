@@ -21,7 +21,7 @@ function side(){
         width:"20rem"
     }, { duration: 1000, fill: "forwards" });
     button.animate({ 
-        display:"none"
+        opacity:0
     }, { duration: 1000, fill: "forwards" });
     
 
