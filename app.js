@@ -24,15 +24,19 @@ function side(){
     button.animate({ 
         opacity:0
     }, { duration: 1000, fill: "forwards" });
-    
+    mode=true;
 
 }
-page.addEventListener("mousedown",function() {
-
+side_.addEventListener("click",function() {
+ if(mode==true){
     side_.animate({ 
-        width:"20rem"
-    }, { duration: 1000, fill: "backwards" });
+        width:"0px"
+    }, { duration: 1000, fill: "forwards" });
     button.animate({ 
-        opacity:0
-    }, { duration: 1000, fill: "backwards" });
+        opacity:1
+    }, { duration: 1500, fill: "forwards" });
+    
+}
+
+  mode=false;
 })
