@@ -3,6 +3,7 @@ const dot = document.querySelector("[data-cursor-dot]");
 const side_=document.querySelector(".side-dash");
 const button=document.querySelector("#btn");
 const page = document.querySelector(".main");
+const mode=false;
 page.addEventListener("mousemove", function(data) {
     console.log("Mouse moved:", data.clientX, data.clientY);
     const x = data.clientX;
@@ -26,3 +27,12 @@ function side(){
     
 
 }
+page.addEventListener("mousedown",function() {
+
+    side_.animate({ 
+        width:"20rem"
+    }, { duration: 1000, fill: "forwards" });
+    button.animate({ 
+        opacity:0
+    }, { duration: 1000, fill: "forwards" });
+})
