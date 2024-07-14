@@ -31,8 +31,8 @@ page.addEventListener("mousedown",function() {
 
     side_.animate({ 
         width:"20rem"
-    }, { duration: 1000, fill: "forwards" });
+    }, { duration: 1000, fill: "backwards" });
     button.animate({ 
         opacity:0
-    }, { duration: 1000, fill: "forwards" });
+    }, { duration: 1000, fill: "backwards" });
 })
