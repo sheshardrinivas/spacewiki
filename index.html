@@ -137,10 +137,10 @@
       .side-dash{
    
 
-        background-color: rgba(255, 255, 255, 0.155);
+        background-color: rgba(255, 255, 255, 0.19);
         height: 50rem;
-        width: 20rem;
         
+        width: 0rem;
         margin-left:100rem ;
         display: flex;
         flex-direction: row;
@@ -170,7 +170,9 @@
         background-color: rgb(255, 255, 255);
         z-index: 5;
       }
-
+      #btn{
+        display: block;
+      }
 
     </style>
 </head>
@@ -184,13 +186,13 @@
             <div class="page1info">
                 <nav>
                    <h3 id="h3" href="#"><img src="logo.jpeg" height="20px" width="20px" style="margin-right: 5px;" >SPACE WIKI</h3>
-                   <div id="h4"><button onclick="side()">MENU</button> </div>
+                   <div onclick="side()" id="h4"><button id="btn" onclick="side()">MENU</button> </div>
                 </nav>
                 <div class="centered-text">
                     <p>WELCOME TO SPACE WIKI</p>
                 </div>
                 <div class="side-dash">
-                  <h3 id="h5">MENU</h3>
+                  <!--<h3 id="h5">MENU</h3>-->
                 </div>
             </div>
         </div>
