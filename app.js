@@ -28,7 +28,7 @@ function side(){
 
 }
 side_.addEventListener("click",function() {
- if(mode==true){
+
     side_.animate({ 
         width:"0px"
     }, { duration: 1000, fill: "forwards" });
@@ -36,7 +36,5 @@ side_.addEventListener("click",function() {
         opacity:1
     }, { duration: 1500, fill: "forwards" });
     
-}
 
-  mode=false;
 })
