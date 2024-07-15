@@ -183,20 +183,7 @@
         background-color: rgb(255, 255, 255);
         z-index: 5;
       }
-      .in::after{
-  
-        content: "hdhjcgjujcghghdcjgbjggkhfghkjfjkjdfgyirfkhjhmfgoyjo7iifol67nkhhrgjtghyrrjdryuy";
-        position: absolute;
-        width: 100%;
-        top: calc(50% + 3.5rem); /* Center vertically with an additional space */
-        left: 50%; /* Center horizontally */
-        transform: translateX(-50%); /* Center horizontally */
-        background-color: rgba(255, 255, 255, 0);
-        z-index: 5;
-        overflow-wrap: break-word; /* Wrap text within the container */
-
-
-      }
+      
 
       .t{
         
@@ -235,6 +222,11 @@
         padding-top: 5rem;
         background-color: rgb(0, 0, 0);
       }
+      .text-after-img{
+        margin-top: 1rem;
+      }
+
+     
     
     </style>
 </head>
@@ -260,9 +252,33 @@
         </div>
         <div class="page2">
             <div class="con">
-                <div class="t thing1"><div class="in"><img class="img" src="nasa ka new rockect ka power motor.jpeg" alt=""></div></div>
-                <div class="t thing2">Thing 2</div>
-                <div class="t thing3">Thing 3</div>
+                <div class="t thing1">
+                    <div class="in">
+                        <img class="img" src="nasa ka new rockect ka power motor.jpeg" alt="">
+                        <div class="text-after-img">
+                            <h2>Heading after Image</h2>
+                            <p>This is the text that comes after the image.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="t thing2">
+                    <div class="in">
+                        <img class="img" src="nasa ka new rockect ka power motor.jpeg" alt="">
+                        <div class="text-after-img">
+                            <h2>Heading after Image 2</h2>
+                            <p>This is the text that comes after the second image.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="t thing3">
+                    <div class="in">
+                        <img class="img" src="nasa ka new rockect ka power motor.jpeg" alt="">
+                        <div class="text-after-img">
+                            <h2>Heading after Image 3</h2>
+                            <p>This is the text that comes after the third image.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     <script src="app.js"></script>
