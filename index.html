@@ -151,10 +151,11 @@
         height: max-content;
         padding: 0 100px;
       }
+     
       #h5::after{
         content: "";
         position: absolute;
-        height: 0.2rem;
+        height: 0.1rem;
         width: 100%;
         left: 0;
         margin-top: 1.2rem;
@@ -166,31 +167,63 @@
       }
       
       .img{
-         float: start;
-         border-radius: 10px;
-         max-width: 100%;
-         height: 400px;
+       float: start;
+       border-radius: 10px;
+       max-width: 100%;
+       height: 400px;
+       margin-top: -18rem;
       }
+      .in::before{
+        content: "";
+        position: absolute;
+        height: 0.1rem;
+        width: 100%;
+        left: 0;
+        margin-top: 8rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 5;
+      }
+      .in::after{
+  
+        content: "hdhjcgjujcghghdcjgbjggkhfghkjfjkjdfgyirfkhjhmfgoyjo7iifol67nkhhrgjtghyrrjdryuy";
+        position: absolute;
+        width: 100%;
+        top: calc(50% + 3.5rem); /* Center vertically with an additional space */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        background-color: rgba(255, 255, 255, 0);
+        z-index: 5;
+        overflow-wrap: break-word; /* Wrap text within the container */
+
+
+      }
+
       .t{
-        background-color: crimson;
-        border-radius: 20px;
+        
         position: relative;
-        width: 30rem;
+        
         height: 80vh;
         z-index: 3;
         display: flex;
         padding-top: 20rem;
-        align-items: top;
+        image-rendering:optimizeQuality;
+        align-items:top;
         justify-content: center;
+        background:#101010;
+        padding: 20pxx;
+        width: 30%;
+        border-radius: 10px;
         color: white;
-        font-family: Orbitron;
-        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 20%;
+        font-family:Orbitron;
+        margin: 2px;
       }
       .page2{
         height: 100vh;
         width: 100%;
         position: relative;
-        background-color: blueviolet;
+        background-color: rgba(137, 43, 226, 0);
       }
       .con{
         height: 100vh;
@@ -200,8 +233,9 @@
         justify-content: space-evenly;
         align-items: top;
         padding-top: 5rem;
-        background-color: navy;
+        background-color: rgb(0, 0, 0);
       }
+    
     </style>
 </head>
 <body>
@@ -226,7 +260,7 @@
         </div>
         <div class="page2">
             <div class="con">
-                <div class="t thing1">Thing 1</div>
+                <div class="t thing1"><div class="in"><img class="img" src="nasa ka new rockect ka power motor.jpeg" alt=""></div></div>
                 <div class="t thing2">Thing 2</div>
                 <div class="t thing3">Thing 3</div>
             </div>
