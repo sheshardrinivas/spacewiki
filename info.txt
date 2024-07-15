@@ -150,4 +150,17 @@ update5:
   Mars Habitat Simulation: NASA's first year-long Mars habitat simulation mission is concluding. The four volunteers who lived in the simulated environment will exit on July 6, providing valuable data for future Mars missions
 
   Extraterrestrial Life Research:
-Researchers are exploring the possibility of detecting advanced alien civilizations through technosignatures. These technosignatures include greenhouse gases that could indicate terraforming activities on distant planets. This approach is part of a broader effort to uncover signs of extraterrestrial life​                
+  Researchers are exploring the possibility of detecting advanced alien civilizations through technosignatures. These technosignatures include greenhouse gases that could indicate terraforming activities on distant planets. This approach is part of a broader effort to uncover signs of extraterrestrial life​    
+
+
+update6:
+   NASA’s New Hybrid Rocket Engine: Engineers at NASA’s Marshall Space Flight Center have unveiled a new low-cost hybrid rocket engine testbed. This innovative engine features variable flow capability and a 20-second continuous burn duration, aimed at enhancing future space propulsion systems​ (NASA)​.
+
+   Perseid Meteor Shower: The Perseid meteor shower, one of the most anticipated meteor showers of the year, is set to peak around August 12-13. This meteor shower, caused by debris from the comet Swift-Tuttle, will be best viewed in the Northern Hemisphere. Observers are advised to find a dark location away from city lights and to be patient as the meteors streak across the sky at about 37 miles per second​ (Space.com)​.
+
+   Chandrayaan-4 Update: India plans to launch Chandrayaan-4 in 2028 to bring back lunar soil samples.
+      Mission Details: Chandrayaan-4 parts will be sent in two launches, assembled in space for a one lunar day mission.
+      Landing Site: The mission will attempt a landing near the Shiv.
+      Private Sector Involvement: India's Chandrayaan-4 mission will involve the country's emerging private sector.
+
+            
