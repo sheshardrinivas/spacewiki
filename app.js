@@ -12,10 +12,11 @@ const txt2=document.querySelector("#h1");
 const page1 = document.querySelector(".page1info");
 const img=document.querySelector("#github");
 const sound=document.querySelector("#audio")
+const img55=document.querySelector("#img55");
 
 //loading screen.
-setTimeout("page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })",sound.pause(),5000)
-setTimeout(() => {sound.play();},5050);
+setTimeout("page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })",()=>{sound.pause()},1000)
+setTimeout(() => {sound.play();},1050);
 
 //contact button .
 button1.addEventListener("click",function(){
@@ -52,6 +53,9 @@ function side(){
         opacity:0
     }, { duration: 1000, fill: "forwards" });
     button1.animate({ 
+        opacity:1
+    }, { duration: 5000, fill: "forwards" });
+    img55.animate({ 
         opacity:1
     }, { duration: 5000, fill: "forwards" });
     button2.animate({ 
@@ -97,6 +101,9 @@ side_.addEventListener("click",function() {
     txt2.animate({ 
         opacity:0
     }, { duration: 1400, fill: "forwards" });
+    img55.animate({ 
+        opacity:0
+    }, { duration: 5000, fill: "forwards" });
     
 
 })
