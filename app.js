@@ -14,8 +14,8 @@ const img=document.querySelector("#github");
 const sound=document.querySelector("#audio")
 
 //loading screen.
-setTimeout("page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })",sound.pause(),2000)
-setTimeout(() => {sound.play();},2010);
+setTimeout("page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })",sound.pause(),5000)
+setTimeout(() => {sound.play();},5050);
 
 //contact button .
 button1.addEventListener("click",function(){
