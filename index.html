@@ -46,7 +46,7 @@
       .page1info{
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgb(0, 0, 0);
         position: relative;
         z-index: 2;
         display: flex;
@@ -245,9 +245,11 @@
         padding-bottom: 20%;
         font-family:Orbitron;
         margin: 2px;
+        cursor: none;
       }
       .btn1{
         font-size: 1rem;
+
         text-decoration: none;
         font-family: Orbitron;
         color: white;
@@ -364,13 +366,18 @@
         
         position: relative;
       }
+      #github{
+        position: absolute;
+        margin-top: 21rem;
+        opacity: 1;
+      }
   
     
     </style>
 </head>
 <body>
     <div class="main">
-        <audio src="abstract-future-bass-162604.mp3" autoplay loop un-muted></audio>
+        <audio src="abstract-future-bass-162604.mp3" autoplay loop un-muted id="audio"></audio>
         <div class="cursor-dot" data-cursor-dot></div>
         <div class="cursor-outline" data-cursor-outline></div>
         <div id="Welcome" class="page1">
@@ -387,7 +394,8 @@
                   <h3 id="h5">MENU</h3>
                   <a id="h0" href="#Welcome">HOME</a>
                   <a id="h1" href="#info">INFO</a>
-                  <button class="btn1" >CONTACT</button>
+                  <button class="btn1"  >CONTACT </button>
+                  <img src="https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif" id="github" height="100px" width="100px" alt="github gif">
     
                   
                   
