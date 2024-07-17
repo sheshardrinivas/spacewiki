@@ -1,23 +1,28 @@
+// declaring all the elements
 const outline = document.querySelector("[data-cursor-outline]");
 const dot = document.querySelector("[data-cursor-dot]");
 const side_=document.querySelector(".side-dash");
 const button=document.querySelector("#btn");
 const button1=document.querySelector(".btn1");
+const button2=document.querySelector(".btn2");
 const page = document.querySelector(".main");
 const txt=document.querySelector("#h5");
 const txt1=document.querySelector("#h0");
 const txt2=document.querySelector("#h1");
-
 const page1 = document.querySelector(".page1info");
 const img=document.querySelector("#github");
 const sound=document.querySelector("#audio")
 
-
+//loading screen
 setTimeout("page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })",sound.pause(),2000)
 setTimeout(() => {sound.play();},2010);
+
+//contact button 
 button1.addEventListener("click",function(){
        window.open("https://github.com/sheshardrinivas/spacewiki");
 });
+
+// custom cursor
 page.addEventListener("mousemove", function(data) {
     console.log("Mouse moved:", data.clientX, data.clientY);
     const x = data.clientX;
@@ -32,6 +37,8 @@ page.addEventListener("mousemove", function(data) {
         top: y + "px"
     }, { duration: 1500, fill: "forwards" });
 });
+
+// function for Visibility of the side panel
 function side(){
     side_.animate({ 
         width:"20rem"
@@ -40,6 +47,9 @@ function side(){
         opacity:0
     }, { duration: 1000, fill: "forwards" });
     button1.animate({ 
+        opacity:1
+    }, { duration: 5000, fill: "forwards" });
+    button2.animate({ 
         opacity:1
     }, { duration: 5000, fill: "forwards" });
     txt.animate({ 
@@ -55,6 +65,8 @@ function side(){
 
 
 }
+
+// function for non-visibility of the side panel
 side_.addEventListener("click",function() {
 
     side_.animate({ 
@@ -64,6 +76,10 @@ side_.addEventListener("click",function() {
         opacity:1
     }, { duration: 1500, fill: "forwards" });
     button1.animate({ 
+        opacity:0
+        
+    }, { duration: 1400, fill: "forwards" });
+    button2.animate({ 
         opacity:0
         
     }, { duration: 1400, fill: "forwards" });
