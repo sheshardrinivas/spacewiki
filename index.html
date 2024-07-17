@@ -151,6 +151,17 @@
         height: max-content;
         padding: 0 100px;
       }
+      #h2{
+        font-size: 1rem;
+        font-family: Orbitron;
+        color: rgb(255, 255, 255);
+        font-weight: 200;
+        position: relative;
+        opacity: 1;
+        height: max-content;
+        padding: 0 100px;
+
+      }
      
       #h5::after{
         content: "";
@@ -169,7 +180,7 @@
       .img{
        float: start;
        border-radius: 10px;
-       max-width: 100%;
+       max-width: 28vw;
        height: 400px;
        margin-top: -18rem;
       }
@@ -225,7 +236,29 @@
       .text-after-img{
         margin-top: 1rem;
       }
-
+      header {
+          margin-top: 50px;
+          background: #000000;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+          font-size: 2rem;
+          font-family:Orbitron;
+          font-weight: 1000;
+          
+      }
+      header::before{
+        
+        content: "";
+        position: absolute;
+        height: 0.1rem;
+        width: 50vw;
+        left: 0;
+        transform: translate(50% );
+        margin-top: 3rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 5;
+      }
      
     
     </style>
@@ -235,7 +268,7 @@
         <audio src="abstract-future-bass-162604.mp3" autoplay loop un-muted></audio>
         <div class="cursor-dot" data-cursor-dot></div>
         <div class="cursor-outline" data-cursor-outline></div>
-        <div class="page1">
+        <div id="Welcome" class="page1">
             <video id="tag" autoplay loop muted src="hd.mp4"></video>
             <div class="page1info">
                 <nav>
@@ -250,7 +283,8 @@
                 </div>
             </div>
         </div>
-        <div class="page2">
+        <div id="info" class="page2">
+           <header> <h5 >LASTEST SPACE NEWS 2024</h5></header>
             <div class="con">
                 <div class="t thing1">
                     <div class="in">
@@ -263,7 +297,7 @@
                 </div>
                 <div class="t thing2">
                     <div class="in">
-                        <img class="img" src="nasa ka new rockect ka power motor.jpeg" alt="spacex">
+                        <img class="img" src="metor shower.jpeg" alt="METEOR">
                         <div class="text-after-img">
                             <h2>Heading after Image 2</h2>
                             <p>This is the text that comes after the second image.</p>
@@ -272,7 +306,7 @@
                 </div>
                 <div class="t thing3">
                     <div class="in">
-                        <img class="img" src="nasa ka new rockect ka power motor.jpeg" alt="nasa">
+                        <img class="img" src="Chandrayaan-4 ka image.webp" alt="nasa">
                         <div class="text-after-img">
                             <h2>Heading after Image 3</h2>
                             <p>This is the text that comes after the third image.</p>
