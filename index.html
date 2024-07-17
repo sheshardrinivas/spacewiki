@@ -86,6 +86,7 @@
         cursor: none;
       }
   
+  
       #h4{
         justify-content: left;
       }
@@ -208,7 +209,29 @@
         align-items:top;
         justify-content: center;
         background:#101010;
-        padding: 20pxx;
+     
+        width: 30%;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        padding-bottom: 20%;
+        font-family:Orbitron;
+        margin: 2px;
+      }
+      .t:hover{
+        
+        position: relative;
+        box-shadow: 0px 0px 40px 10px rgb(6, 27, 255);
+        border: 0.2rem solid rgb(94, 107, 255);
+        height: 80vh;
+        z-index: 3;
+        display: flex;
+        padding-top: 20rem;
+        image-rendering:optimizeQuality;
+        align-items:top;
+        justify-content: center;
+        background:#000000;
+        
         width: 30%;
         border-radius: 10px;
         color: white;
@@ -259,6 +282,38 @@
         background-color: rgb(255, 255, 255);
         z-index: 5;
       }
+      #def{
+        padding-top: 1.5rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        font-family: monospace;
+      }
+      #sideheadings{
+
+        padding-top: 1rem;
+        font-family: Orbitron;
+        font-weight: 100;
+        font-size: 1.25rem;
+      }
+      #sideheadings1{
+
+       padding-top: 1rem;
+       font-family: Orbitron;
+       font-weight: 100;
+       font-size: 1rem;
+       margin-left: 44vw;
+       padding-bottom: 4rem;
+
+      }
+      .footer{
+
+
+
+        margin-top: 8rem;
+        position: absolute;
+        color: white;
+
+      }
      
     
     </style>
@@ -290,8 +345,8 @@
                     <div class="in">
                         <img class="img" src="nasa ka new rockect ka power motor.jpeg" alt="nsaa">
                         <div class="text-after-img">
-                            <h2>Heading after Image</h2>
-                            <p>This is the text that comes after the image.</p>
+                            <h2>NASA’s New Hybrid Rocket Engine:</h2>
+                            <p id="def"> Engineers at NASA’s Marshall Space Flight Center have unveiled a new low-cost hybrid rocket engine testbed. This innovative engine features variable flow capability and a 20-second continuous burn duration, aimed at enhancing future space propulsion systems​.</p>
                         </div>
                     </div>
                 </div>
@@ -299,8 +354,8 @@
                     <div class="in">
                         <img class="img" src="metor shower.jpeg" alt="METEOR">
                         <div class="text-after-img">
-                            <h2>Heading after Image 2</h2>
-                            <p>This is the text that comes after the second image.</p>
+                            <h2>Perseid Meteor Shower:</h2>
+                            <p id="def">The Perseid meteor shower, one of the most anticipated meteor showers of the year, is set to peak around August 12-13. This meteor shower, caused by debris from the comet Swift-Tuttle, will be best viewed in the Northern Hemisphere. Observers are advised to find a dark location away from city lights and to be patient as the meteors streak across the sky at about 37 miles per second​.</p>
                         </div>
                     </div>
                 </div>
@@ -308,13 +363,19 @@
                     <div class="in">
                         <img class="img" src="Chandrayaan-4 ka image.webp" alt="nasa">
                         <div class="text-after-img">
-                            <h2>Heading after Image 3</h2>
-                            <p>This is the text that comes after the third image.</p>
+                            <h2>Chandrayaan-4 Update:</h2>
+                            <p id="def">India plans to launch Chandrayaan-4 in 2028 to bring back lunar soil samples.</p>
+                            <h2 id="sideheadings" >Landing Site:</h2>
+                            <p id="def">The mission will attempt a landing near the Shiv.</p>
+                            <h2 id="sideheadings" >Private Sector Involvement:</h2>
+                            <p id="def">India's Chandrayaan-4 mission will involve the country's emerging private sector.</p>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="footer"><p id="sideheadings1">BY SHESHADRINIVAS.</p></div>
     <script src="app.js"></script>
 </body>
 </html>
