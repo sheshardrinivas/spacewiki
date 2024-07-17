@@ -2,8 +2,11 @@ const outline = document.querySelector("[data-cursor-outline]");
 const dot = document.querySelector("[data-cursor-dot]");
 const side_=document.querySelector(".side-dash");
 const button=document.querySelector("#btn");
+const button1=document.querySelector(".btn1");
 const page = document.querySelector(".main");
 const txt=document.querySelector("#h5");
+const txt1=document.querySelector("#h0");
+const txt2=document.querySelector("#h1");
 
 page.addEventListener("mousemove", function(data) {
     console.log("Mouse moved:", data.clientX, data.clientY);
@@ -25,10 +28,20 @@ function side(){
     button.animate({ 
         opacity:0
     }, { duration: 1000, fill: "forwards" });
+    button1.animate({ 
+        opacity:1
+    }, { duration: 5000, fill: "forwards" });
     txt.animate({ 
         opacity:1
     }, { duration: 5000, fill: "forwards" });
+    txt1.animate({ 
+        opacity:1
+    }, { duration: 5000, fill: "forwards" });
     mode=true;
+    txt2.animate({ 
+        opacity:1
+    }, { duration: 5000, fill: "forwards" });
+
 
 }
 side_.addEventListener("click",function() {
@@ -39,7 +52,16 @@ side_.addEventListener("click",function() {
     button.animate({ 
         opacity:1
     }, { duration: 1500, fill: "forwards" });
+    button1.animate({ 
+        opacity:0
+    }, { duration: 1400, fill: "forwards" });
     txt.animate({ 
+        opacity:0
+    }, { duration: 1400, fill: "forwards" });
+    txt1.animate({ 
+        opacity:0
+    }, { duration: 1400, fill: "forwards" });
+    txt2.animate({ 
         opacity:0
     }, { duration: 1400, fill: "forwards" });
     
