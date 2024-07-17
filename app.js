@@ -1,4 +1,4 @@
-// declaring all the elements
+// declaring all the elements.
 const outline = document.querySelector("[data-cursor-outline]");
 const dot = document.querySelector("[data-cursor-dot]");
 const side_=document.querySelector(".side-dash");
@@ -13,16 +13,21 @@ const page1 = document.querySelector(".page1info");
 const img=document.querySelector("#github");
 const sound=document.querySelector("#audio")
 
-//loading screen
+//loading screen.
 setTimeout("page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })",sound.pause(),2000)
 setTimeout(() => {sound.play();},2010);
 
-//contact button 
+//contact button .
 button1.addEventListener("click",function(){
        window.open("https://github.com/sheshardrinivas/spacewiki");
 });
 
-// custom cursor
+//back to past button.
+button2.addEventListener("click",function(){
+    window.location="index6.html"
+});
+
+// custom cursor.
 page.addEventListener("mousemove", function(data) {
     console.log("Mouse moved:", data.clientX, data.clientY);
     const x = data.clientX;
@@ -38,7 +43,7 @@ page.addEventListener("mousemove", function(data) {
     }, { duration: 1500, fill: "forwards" });
 });
 
-// function for Visibility of the side panel
+// function for Visibility of the side panel.
 function side(){
     side_.animate({ 
         width:"20rem"
@@ -66,7 +71,7 @@ function side(){
 
 }
 
-// function for non-visibility of the side panel
+// function for non-visibility of the side panel.
 side_.addEventListener("click",function() {
 
     side_.animate({ 
