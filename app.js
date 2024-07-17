@@ -7,7 +7,7 @@ const page = document.querySelector(".main");
 const txt=document.querySelector("#h5");
 const txt1=document.querySelector("#h0");
 const txt2=document.querySelector("#h1");
-const button2=document.querySelector(".btn2");
+
 const page1 = document.querySelector(".page1info");
 const img=document.querySelector("#github");
 const sound=document.querySelector("#audio")
@@ -15,7 +15,9 @@ const sound=document.querySelector("#audio")
 
 setTimeout("page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })",sound.pause(),2000)
 setTimeout(() => {sound.play();},2010);
-
+button1.addEventListener("click",function(){
+       window.open("https://github.com/sheshardrinivas/spacewiki");
+});
 page.addEventListener("mousemove", function(data) {
     console.log("Mouse moved:", data.clientX, data.clientY);
     const x = data.clientX;
