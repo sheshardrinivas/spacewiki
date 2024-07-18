@@ -15,12 +15,12 @@ const sound=document.querySelector("#audio")
 const img55=document.querySelector("#img55");
 
 //loading screen.
-setTimeout(() => {
-    page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 4000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 4000, fill: 'forwards' }),sound.pause()
-}, 3000);
-setTimeout(() => {
-    sound.play()
-}, 5100);
+setTimeout(
+    "page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 4000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 4000, fill: 'forwards' }),sound.pause()"
+, 3000);
+setTimeout( 
+   " sound.play()"
+, 5100);
 
 
 //contact button .
