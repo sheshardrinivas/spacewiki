@@ -14,13 +14,16 @@ const img=document.querySelector("#github");
 const sound=document.querySelector("#audio")
 const img55=document.querySelector("#img55");
 
+
+
 //loading screen.
+sound.pause();
 setTimeout(
-    "page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 4000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 4000, fill: 'forwards' }),sound.pause()"
+    "page1.animate({ backgroundColor:'rgba(0, 0, 0,0)',}, { duration: 2000, fill: 'forwards' }),img.animate({ opacity: 0}, { duration: 2000, fill: 'forwards' })"
 , 3000);
 setTimeout( 
    " sound.play()"
-, 5100);
+, 3100);
 
 
 //contact button .
