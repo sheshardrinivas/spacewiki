@@ -28,6 +28,7 @@ button1.addEventListener("click",function(){
        window.open("https://github.com/sheshardrinivas/spacewiki");
 });
 
+page.style.cursor="none";
 //back to past button.
 button2.addEventListener("click",function(){
     window.location="index6.html"
